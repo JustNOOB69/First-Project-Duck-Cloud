@@ -43,20 +43,19 @@ cd First-Project-Duck-Cloud
 <br>
 
 3. **Create a New Branch:**
+    
     - Make sure that you are on the main branch:
-```bash
-git checkout main
-```
-
+    ```bash
+    git checkout main
+    ```
     - Fetch changes from the repository and merge them into your current branch:
-```bash
-git pull origin main
-```
-
+    ```bash
+    git pull origin main
+    ```
     - Create a new branch:
-```Bash
-git checkout -b <your-name>
-```
+    ```Bash
+    git checkout -b <your-name>
+    ```
 
 <br>
 
@@ -71,15 +70,16 @@ code <yourfilename>
 <br>
 
 5. **Stage and Commit Your Changes:**
+
     - After making changes, stage them for commit:
-```bash
-git add .
-```
+    ```bash
+    git add .
+    ```
 
     - Commit your changes with a clear message:
-```bash
-git commit -m "Changed The Font Style Of Navigation"
-```
+    ```bash
+    git commit -m "Changed The Font Style Of Navigation"
+    ```
 *Note:* Make sure to commit your changes with a clear message.
 
 <br>
