@@ -1,0 +1,324 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, rgba(231, 255, 254, 0.833), rgba(162, 168, 169, 0.8)), url('../../Images/about_images/head.jpg') no-repeat center center/cover;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Fade-in Animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #ededed;
+    border-radius: 50px;
+    box-shadow: 0 0 12px #606060;
+    text-shadow: 0 0 2px #f0f0f0;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 15px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #34aeff;
+}
+
+/* Keyframe animations for fade-in and slide-up effect */
+@keyframes fade-slide {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        text-shadow: 0 0 8px #ffffff, 0 0 8px #ffffff, 0 0 12px #ffffff;
+    }
+    50% {
+        text-shadow: 0 0 12px #fffafa, 0 0 10px #696969, 0 0 14px #eefdfd;
+    }
+}
+
+/* Elegant Title Style */
+.animated-title {
+    font-size: 2.4em;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    animation: fade-slide 2s ease-out forwards, glow-pulse 3s ease-in-out infinite;
+    color: #000000;
+    text-shadow: 0 0 5px #cacaca;
+}
+
+/* Header Styling */
+.header {
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.header h1 {
+    font-size: 3.5em;
+    margin-top: 30px;
+    text-shadow: 0 0 2px #ffffff;
+}
+
+.header p {
+    font-size: 1.5em;
+    color: #000000;
+    text-shadow: 0px 5px 5px #ffffff;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Our Story Section */
+.our-story {
+    padding: 40px 0;
+    border: 1px solid black;
+}
+
+/* Title Styling */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+.our-story h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 8px #ffffff;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Story Content Layout */
+.story-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Hide all radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Carousel Styling */
+.story-carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.story-slide {
+    display: none;
+    align-items: center;
+    gap: 20px;
+    animation: fade-slide 1s ease-in-out;
+}
+
+/* Show active slide based on checked radio button */
+#slide1:checked ~ .story-carousel #content1,
+#slide2:checked ~ .story-carousel #content2,
+#slide3:checked ~ .story-carousel #content3 {
+    display: flex;
+}
+
+/* Arrow Styling */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #007ACC;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.arrow.left {
+    left: 2px;
+}
+
+.arrow.right {
+    right: 2px;
+}
+
+.arrow:hover {
+    background-color: #007ACC;
+    color: #ffffff;
+}
+
+/* Image and Text Box Styling */
+.story-image {
+    flex: 1.5;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.story-text {
+    flex: 2;
+    background: linear-gradient(135deg, rgba(231, 255, 254, 0.833), rgba(162, 168, 169, 0.8));
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.story-text p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.story-slide.active .story-image {
+    transform: scale(1.05);
+}
+
+/* Image Fade-In and Hover Scale */
+.story-image {
+    flex: 1;
+    max-width: 50%;
+    height: 40vh;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.3s ease, opacity 0.5s ease;
+    animation: fadeInImage 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInImage {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.story-image:hover {
+    transform: scale(1.05);
+}
+
+/* Mission and Vision Styling */
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.mission, .vision {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(231, 255, 254, 0.833), rgba(162, 168, 169, 0.8));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fade-in 1.5s ease forwards;
+    margin: 20px 0px;
+}
+
+.mission:hover, .vision:hover {
+    transform: scale(1.05);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.mission, .vision {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    animation: fade-in 1.5s ease forwards;
+}
+
+.footer p {
+    font-size: 0.9em;
+}
