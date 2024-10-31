@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .login-container {
+            width: 100%;
+            max-width: 400px; 
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto; 
+        }
+        
+        .login-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .login-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%; /* Make buttons take full width */
+            padding: 10px;
+            margin: 20px 0; /* Equal margin for spacing */
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            background-color: white;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        
+        .login-button img {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .login-container a {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+        }
+        
+        .login-container a:hover {
+            color: #000;
+        }
+        
+        .terms {
+            font-size: 12px;
+            color: #888;
+            margin-top: 20px;
+        }
+        
+        .terms a {
+            color: #888;
+            text-decoration: none;
+        }
+        
+        .terms a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Join Medium.</h2>
+        
+        <a href="Signup.html" class="login-button">
+            <img src="images/download.png" alt="Google Icon"> 
+            Sign up with Google
+        </a>
+
+        <a href="Signup.html" class="login-button">
+            <img src="images/facebook-logo-facebook-icon-transparent-free-png.webp" alt="Facebook Icon"> 
+            Sign up with Facebook
+        </a>
+
+        <a href="Signup.html" class="login-button">
+            <img src="images/google-mail-gmail-icon-logo-symbol-free-png.webp" alt="Email Icon"> 
+            Sign up with Email
+        </a>
+        
+        <p>Already have an account? <a href="#">Sign in</a></p>
+        
+        <div class="terms">
+            <p>Click "Sign up" to agree to Medium's <a href="Terms.html">Terms of Service</a> and acknowledge that Medium's <a href="#">Privacy Policy</a> applies to you.</p>
+        </div>
+    </div>
+</body>
+</html>
