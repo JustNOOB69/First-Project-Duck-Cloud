@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses</title>
+    <link rel="stylesheet" href="courses.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Our Online Courses</h1>
+        
+        <div class="courses-grid">
+            <!-- Course 1 -->
+            <div class="course-card">
+                <div class="course-content">
+                    <h2 class="course-title">Introduction to Web Development</h2>
+                    <div class="course-meta">Beginner | 6 Weeks</div>
+                    <p class="course-description">
+                        Learn the fundamentals of web development from scratch. 
+                        Perfect for beginners looking to start their coding journey.
+                    </p>
+                    <div class="course-footer">
+                        <span class="course-price">$50</span>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Course 2 -->
+            <div class="course-card">
+                <div class="course-content">
+                    <h2 class="course-title">JavaScript Programming</h2>
+                    <div class="course-meta">Intermediate | 8 Weeks</div>
+                    <p class="course-description">
+                        JavaScript is the programming language that powers the modern web. In this course, you will learn the basic concepts of web development with JavaScript.
+                     You will work with functions, objects, arrays, variables, data types, the HTML DOM, and much more.
+                    </p>
+                    <div class="course-footer">
+                        <span class="course-price">$60</span>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card">
+                <div class="course-content">
+                    <h2 class="course-title">FullStack Masterclass</h2>
+                    <div class="course-meta">Advanced | 12 Weeks</div>
+                    <p class="course-description">
+                        Comprehensive course covering frontend, backend, 
+                        and full stack development with modern technologies.
+                    </p>
+                    <div class="course-footer">
+                        <span class="course-price">$100</span>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
